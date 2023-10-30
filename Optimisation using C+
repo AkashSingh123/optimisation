@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> data = {1, 2, 3, 4, 5};
+    int sum = 0;
+
+    for (int i = 0; i < data.size(); ++i) {
+        if (data[i] % 2 == 0) {
+            sum += data[i] * 2;
+        } else {
+            sum += data[i];
+        }
+    }
+
+    std::cout << "Sum: " << sum << std::endl;
+    return 0;
+}
